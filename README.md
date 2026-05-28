@@ -12,7 +12,7 @@
 
 基于最大熵连续控制基底（Soft Actor-Critic, SAC），本项目重构了多项核心控制机制，突破了传统数值最优控制（如 GRAPE）在面临高维非凸地形时易陷入局部最优的瓶颈。
 
-## ✨ Core Features (核心创新点)
+## ✨ Core Features (核心工作)
 *   **Residual-RL Architecture (残差强化学习):** 融合量子物理先验底色，将全局黑盒探索转化为局部流形微扰，实现 $0$ 步跨越收敛门槛。
 *   **Curriculum Learning (动态课程调度):** 实现智能体从纯幺正相干演化空间向强耗散非平稳环境的无缝知识迁移，彻底规避高方差环境下的早期崩溃。
 *   **Log-Reward Shaping (对数奖励塑形):** 引入量子最优控制中的对数失真度，有效打破逼近物理极限时面临的线性梯度消失困境。
@@ -21,9 +21,9 @@
 ## 📂 Repository Structure (仓库结构)
 *   `quantum_pulse_final.py`: 核心强化学习环境与 SAC 智能体训练、验证推理主程序。
 *   `Master_Pulse_Baseline.csv`: 用于残差网络初始化的大宗师（基准）物理底色流形数据。
-*   `SAC_Master_XXXX.zip`: 完整版残差 SAC 框架预训练权重（极限保真度：**93.87%**）。
-*   `SAC_Ablation_Linear_XXXX.zip`: 移除对数奖励塑形后的消融实验模型权重（遭遇梯度天花板，保真度：**92.04%**）。
-*   `Ultimate_Pulse.png` / `tensorboard_curves.png`: 最终收敛波形拓扑与训练过程记录图表。
+*   `SAC_MaxNoise_Final_20260527_1248.zip`: 完整版残差 SAC 框架预训练权重（极限保真度：**93.87%**）。
+*   `SAC_Ablation_Linear_20260528_1731.zip`: 移除对数奖励塑形后的消融实验模型权重（遭遇梯度天花板，保真度：**92.04%**）。
+*   `Ultimate_Pulse_MaxNoise_20260527_1248.png` / `SAC_MaxNoise_20260527_1248_1.png`: 最终收敛波形拓扑与训练过程记录图表。
 
 ## 🚀 Quick Start (快速运行)
 
