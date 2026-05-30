@@ -20,7 +20,7 @@
 
 ## 📂 Repository Structure (仓库结构)
 *   `quantum_pulse_final.py`: 核心强化学习环境与 SAC 智能体训练、验证推理主程序。
-*   `Master_Pulse_Baseline.csv`: 用于残差网络初始化的大宗师（基准）物理底色流形数据。
+*   `Master_Pulse_Baseline.csv`: 用于残差网络初始化的（基准）物理底色流形数据。
 *   `SAC_MaxNoise_Final_20260527_1248.zip`: 完整版残差 SAC 框架预训练权重（极限保真度：**93.87%**）。
 *   `SAC_Ablation_Linear_20260528_1731.zip`: 移除对数奖励塑形后的消融实验模型权重（遭遇梯度天花板，保真度：**92.04%**）。
 *   `Ultimate_Pulse_MaxNoise_20260527_1248.png` / `SAC_MaxNoise_20260527_1248_1.png`: 最终收敛波形拓扑与训练过程记录图表。
